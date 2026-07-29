@@ -1,34 +1,41 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System.Threading.Tasks;
+using Serilog;
+using JobHunterAI.CLI.Extensions;
 using System;
+using System.Threading.Tasks;
 
 namespace JobHunterAI.CLI;
 
-internal class Program
+internal static class Program
 {
     public static async Task Main(string[] args)
     {
-        using IHost host = Host.CreateDefaultBuilder(args)
-            .ConfigureLogging(logging =>
-            {
-                logging.ClearProviders();
-                logging.AddConsole();
-            })
-            .ConfigureServices(services =>
-            {
-                services.AddSingleton<Application>();
-            })
-            .Build();
+        Log.Logger = new LoggerConfiguration()
+            .WriteTo.Console()
+            .CreateLogger();
 
-        Console.WriteLine("========================================");
-        Console.WriteLine("          JobHunterAI v0.1");
-        Console.WriteLine("========================================");
-        Console.WriteLine();
+        try
+        {
+            using IHost host = Host.CreateDefaultBuilder(args)
+                .UseSerilog()
+                .ConfigureServices((context, services) =>
+                {
+                    services.AddJobHunterAI(context.Configuration);
+                })
+                .Build();
 
-        var application = host.Services.GetRequiredService<Application>();
+            var application = host.Services.GetRequiredService<Application>();
 
-        await application.RunAsync();
+            await application.RunAsync();
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex, "Application terminated unexpectedly.");
+        }
+        finally
+        {
+            await Log.CloseAndFlushAsync();
+        }
     }
 }
