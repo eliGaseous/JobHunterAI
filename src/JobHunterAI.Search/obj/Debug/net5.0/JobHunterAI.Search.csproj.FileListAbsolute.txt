@@ -1,0 +1,15 @@
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\bin\Debug\net5.0\JobHunterAI.Search.deps.json
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\bin\Debug\net5.0\JobHunterAI.Search.dll
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\bin\Debug\net5.0\ref\JobHunterAI.Search.dll
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\bin\Debug\net5.0\JobHunterAI.Search.pdb
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\bin\Debug\net5.0\JobHunterAI.Core.dll
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\bin\Debug\net5.0\JobHunterAI.Core.pdb
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\obj\Debug\net5.0\JobHunterAI.Search.csproj.AssemblyReference.cache
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\obj\Debug\net5.0\JobHunterAI.Search.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\obj\Debug\net5.0\JobHunterAI.Search.AssemblyInfoInputs.cache
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\obj\Debug\net5.0\JobHunterAI.Search.AssemblyInfo.cs
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\obj\Debug\net5.0\JobHunterAI.Search.csproj.CoreCompileInputs.cache
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\obj\Debug\net5.0\JobHunterAI.Search.csproj.CopyComplete
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\obj\Debug\net5.0\JobHunterAI.Search.dll
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\obj\Debug\net5.0\ref\JobHunterAI.Search.dll
+F:\GitHubRepos\JobHunterAI\src\JobHunterAI.Search\obj\Debug\net5.0\JobHunterAI.Search.pdb
